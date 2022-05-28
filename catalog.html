@@ -18,7 +18,7 @@
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+              <a class="navigation-link" >Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-list navigation-user">
@@ -37,7 +37,7 @@
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Хочу сюда!</a>
+              <button class="navigation-button" type="submit" >Хочу сюда!</button>
             </li>
           </ul>
         </nav>
@@ -48,7 +48,9 @@
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link visually-hidden"  href="index.html">Главная</a>
+                <a class="breadcrumbs-link" href="index.html">
+                  <span class="visually-hidden">Главная</span>
+                </a>
               </li>
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link">Гостиницы</a>
@@ -56,69 +58,57 @@
             </ul>
         </header>
 
-        <section class="catalog-products">
-            <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
-            <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-      
-                <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Инфраструктура:</legend>
-                <ul class="catalog-filter-list">
+        <section class="catalog-filter">
+          <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
+          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Инфраструктура:</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="Swimming-pool" checked>Бассейн
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="parking" checked>Парковка
+                  </label>
+                  </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="Swimming-pool" checked>
+                      <input class="control-input" type="checkbox" name="wi-fi">Wi-Fi
+                    </label>
+                  </li>
+              </ul>
+            </fieldset>
       
-                      Бассейн
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Тип жилья:</legend>
+              <ul class="catalog-filter-list">
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="product-group" value="Hotel" checked>Гостиница
+                      </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="product-group" value="Motel">Мотель
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="parking" checked>
-      
-                      Парковка
-                    </label>
+                      <input class="control-input" type="radio" name="product-group" value="Apartments">Апартаменты
+                      </label>
                   </li>
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="control-input" type="checkbox" name="wi-fi" >
-      
-                      Wi-Fi
-                    </label>
-                  </li>
-                </ul>
-                </fieldset>
-      
-                <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Тип жилья:</legend>
-                <ul class="catalog-filter-list">
-                    <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="control-input" type="radio" name="product-group" value="Hotel" checked>
-      
-                        Гостиница
-                      </label>
-                    </li>
-                    <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="control-input" type="radio" name="product-group" value="Motel">
-      
-                        Мотель
-                      </label>
-                    </li>
-                    <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="control-input" type="radio" name="product-group" value="Apartments">
-      
-                        Апартаменты
-                      </label>
-                    </li>
-                </ul>
-                </fieldset>
-      
-                <button class="button-apply" type="submit"><b>Применить</b></button>
-                <button class="button-reset" type="submit">Сбросить</button>
-            </form>
-            
-            <h2 class="offers-found"> Найдено гостиниц: 38</h2>
+              </ul>
+            </fieldset>
+            <button class="button-apply" type="submit"><b>Применить</b></button>
+            <button class="button-reset" type="submit">Сбросить</button>
+          </form>
+        </section>
+
+        <section class="catalog-product"> 
+          <h2 class="offers-found"> Найдено гостиниц: 38</h2>
             <select class="select-control" aria-label="Сортировка">
                 <option value="cheap">Сначала дешёвое</option>
             </select>
@@ -215,7 +205,7 @@
                   <d class="number-offers">4</d>
                 </p>
               </div>
-            </section>
+        </section>
     </main>
 
 
