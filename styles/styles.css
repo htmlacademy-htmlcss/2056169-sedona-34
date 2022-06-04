@@ -50,9 +50,8 @@
     text-decoration: none;
   }
 
-  .main-index {
+  .main-bg-img {
     background-image: url("/images/main/index-background.jpg");
-    background-size: 100% auto;
     background-repeat: no-repeat;
   }
 
