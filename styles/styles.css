@@ -50,11 +50,26 @@
     text-decoration: none;
   }
 
-  .main-bg-img {
+  div {
     background-image: url("/images/main/index-background.jpg");
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: 100% auto;
   }
+  
+  p {
+    background-image: none;
+  }
+
+  .main-mask{
+    background-image: url("/images/main/main-mask.svg");
+    background-repeat: no-repeat;
+  }
+
+  
+
+
+
+
 
   .main-title {
     font-weight: 700;
