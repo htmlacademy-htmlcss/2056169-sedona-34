@@ -22,6 +22,9 @@
   }
 
   .button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -46,14 +49,8 @@
     text-decoration: none;
   }
 
-  .main-background {
-    background-image: url("/images/main/index-background.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-  }
-  
-  .main-logo {
-    background-image: url("/images/main/main-mask.svg");
+  div .main-background {
+    background-image: url("/images/main/index-background.jpg"), url("/images/main/main-mask.svg");
     background-repeat: no-repeat;
     background-size: 100% auto;
   }
@@ -97,8 +94,6 @@
     font-weight: 400;
   }
 
-
-  
   .advantages-item {
     font-weight: 700;
     font-size: 24px;
@@ -125,11 +120,11 @@
     color: #333333;
   }
 
-  .advantages-item-rgba {
+  .rgba {
    background: rgba(131, 179, 211, 0.12);
   }
 
-.advantages-item-rgba2 {
+.rgba2 {
   background: rgba(131, 179, 211, 0.2);
 }
  
@@ -150,12 +145,6 @@
   font-size: 22px;
   line-height: 26px;
   color: #333333;
-}
-
-.catalog-button {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
 }
 
 .newsletter {
@@ -179,21 +168,13 @@
   line-height: 26px;
 }
 
-.newsletter-button {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
+.newsletter-button{
   background: #82B3D3;
-  border-radius: 0px 10px 10px 0px;
-}
-
-.footer-social a {
-  text-transform: capitalize;
-  text-decoration: none;
-  color: #000000;
 }
 
 .footer-contacts-address-phone {
+  color: #000000;
+  text-decoration: none;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
@@ -238,9 +219,6 @@
 
 .button-apply {
   background: #82B3D3;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
 }
 
 .offers-found {
@@ -277,13 +255,8 @@
 
 .rating-number {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
   color: #333333;
   background: #F2F2F2;
-  border-radius: 4px;
 }
 
 .pagination-link {
