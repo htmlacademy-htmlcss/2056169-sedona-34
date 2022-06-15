@@ -96,6 +96,7 @@
 
   .main-background {
     background-image: url("/images/main/index-background.jpg");
+    background-color: #333333;
     background-repeat: no-repeat;
     background-size: 100% auto;
   }
@@ -210,7 +211,8 @@
   width: 1200px;
   margin: 0 auto;
   flex-direction: column;
-  background-image: url(/images/footer/background-subscribe.jpg);
+  background-image: url("/images/footer/background-subscribe.jpg");
+  background-color: #333333;
   background-size: 100% auto;
   background-repeat: no-repeat;
   color: #FFFFFF;
@@ -272,6 +274,7 @@
   margin: 0 auto;
   flex-direction: column;
   background-image: url("/images/filter-content/filter.jpg");
+  background-color: #333333;
   background-size: 100% auto;
   background-repeat: no-repeat;
   color: #FFFFFF;
