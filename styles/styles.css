@@ -1,134 +1,131 @@
-  @font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: url("fonts/pt-sans-regular.woff2") format("woff2");
-    font-display: swap;
-  }
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/pt-sans-regular.woff2") format("woff2");
+  font-display: swap;
+}
 
-  @font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 700;
-    src: url("fonts/pt-sans-bold.woff2") format("woff2");
-    font-display: swap;
-  }
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/pt-sans-bold.woff2") format("woff2");
+  font-display: swap;
+}
 
-  html {
-    height: 100%;
-  }
+html {
+  height: 100%;
+}
 
-  body {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    font-family: "PT Sans", sans-serif;
-    font-size: 18px;
-    line-height: 21px;
-    color: #000000;
-    background-color: #ffffff;
-  }
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+}
 
-  .button {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #ffffff;
-    background: #756157;
-    border-radius: 4px;
-  }
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background: #756157;
+  border-radius: 4px;
+}
 
-  .page-header {
-    color: #000000;
-    background-color: #ffffff;
-  }
+.page-header {
+  color: #000000;
+  background-color: #ffffff;
+}
 
-  .navigation {
-    display: flex;
-    width: 1060px;
-    margin: 0 auto;
-  }
+.navigation {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
 
-  .navigation-logo {
-    width: 140px;
-    margin-right: auto;
-  }
+.navigation-logo {
+  width: 140px;
+  margin-right: auto;
+}
 
-  .navigation-list {
-    width: 420px;
-    margin: 0;
-    padding: 0;
-  }
+.navigation-list {
+  width: 420px;
+  margin: 0;
+  padding: 0;
+}
 
-  .navigation-user {
-    max-width: 300px;
-    margin-left: auto;
-  }
+.navigation-user {
+  max-width: 300px;
+  margin-left: auto;
+}
   
-  .navigation-link {
-    color: #000000;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 26px;
-    text-transform: capitalize;
-    text-decoration: none;
-  }
+.navigation-link {
+  color: #000000;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: capitalize;
+  text-decoration: none;
+}
 
-  .main-container {
-    flex-grow: 1;
-  }
+.main-container {
+  flex-grow: 1;
+}
 
-  .page-container {
-    width: 1200px;
-    margin: 0 auto;
-  }
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
 
-  .main-logo {
-    display: block;
-    margin: 0 auto;
-  }
+.main-logo {
+  display: block;
+  margin: 0 auto;
+  padding: 51px;
+}
 
-  .main-background {
-    background-image: url("/images/main/index-background.jpg");
-    background-color: #333333;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-  }
+.main-background {
+  background-image: url("/images/main/main-mask.svg"), url("/images/main/index-background.jpg");
+  height: 485px;
+  background-position: bottom;
+  background-color: antiquewhite;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
 
-  .main-logo {
-    background-image: url("/images/main/main-mask.svg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-  }
+.main-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
 
-  .main-title {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    text-align: center;
-    text-transform: uppercase;
-  }
+.main-description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
 
-  .main-description {
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 26px;
-    text-align: center;
-  }
-
-  .advantages-list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-  }
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
 
 .white-advantages-item {
   width: 400px;
@@ -152,34 +149,33 @@
   font-weight: 400;
 }
 
-  .advantages-item {
-    width: 400px;
-    text-align: center;
-    color: #000000;
-    background-color: #ffffff;
-  }
+.advantages-item {
+  width: 400px;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+}
 
-  .advantages-title {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px; 
-  }
+.advantages-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px; 
+}
 
-  .advantages-description-number {
-    font-weight: 400;
-    color: #333333;
-  }
+.advantages-description-number {
+  font-weight: 400;
+  color: #333333;
+}
 
-  .advantages-description {
-    font-weight: 400;
-    color: #333333;
-  }
+.advantages-description {
+  font-weight: 400;
+  color: #333333;
+}
 
-  .rgba {
-   background: rgba(131, 179, 211, 0.12);
-  }
-
+.rgba {
+  background: rgba(131, 179, 211, 0.12);
+}
 .rgba2 {
   background: rgba(131, 179, 211, 0.2);
 }
@@ -441,4 +437,27 @@
   color: #333333;
 }
 
+.footer-social-vk {
+  background-image: url(/images/footer/social-vkontakte.svg); 
+  background-repeat: no-repeat;
+}
 
+.footer-social-tg {
+  background-image: url(/images/footer/social-telegram.svg);
+  background-repeat: no-repeat;
+}
+
+.footer-social-yt {
+  background-image: url(/images/footer/social-youtube.svg);
+  background-repeat: no-repeat;
+}
+
+.basket {
+  background-image: url(/images/header/favorite.svg);
+  background-repeat: no-repeat;
+}
+
+.search {
+  background-image: url(/images/header/search.svg);
+  background-repeat: no-repeat;
+}
