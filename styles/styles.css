@@ -107,7 +107,7 @@ body {
   background-image: url("/images/main/main-mask.svg"), url("/images/main/index-background.jpg");
   height: 485px;
   background-position: bottom;
-  background-color: antiquewhite;
+  background-color: #b9b7b6;
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
@@ -210,7 +210,7 @@ body {
   margin: 0 auto;
   flex-direction: column;
   background-image: url("/images/footer/background-subscribe.jpg");
-  background-color: #333333;
+  background-color: #b9b7b6;
   background-size: 100% auto;
   background-repeat: no-repeat;
   color: #FFFFFF;
@@ -272,7 +272,7 @@ body {
   margin: 0 auto;
   flex-direction: column;
   background-image: url("/images/filter-content/filter.jpg");
-  background-color: #333333;
+  background-color: #b9b7b6;
   background-size: 100% auto;
   background-repeat: no-repeat;
   color: #FFFFFF;
@@ -464,12 +464,12 @@ body {
   background-repeat: no-repeat;
 }
 
-.basket {
+.navigation-item-basket {
   background-image: url(/images/header/favorite.svg);
   background-repeat: no-repeat;
 }
 
-.search {
+.navigation-item-search {
   background-image: url(/images/header/search.svg);
   background-repeat: no-repeat;
 } */
