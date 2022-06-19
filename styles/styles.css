@@ -44,6 +44,14 @@ body {
   border-radius: 4px;
 }
 
+.rgba {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.rgba2 {
+  background: rgba(131, 179, 211, 0.2);
+}
+
 .page-header {
   color: #000000;
   background-color: #ffffff;
@@ -127,26 +135,12 @@ body {
   padding: 0;
 }
 
-.white-advantages-item {
-  width: 400px;
-  text-align: center;
-  color: #FFFFFF;
-  background-color: #82B3D3;
-}
-
-.white-advantages-title {
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-} 
-
-.white-advantages-description-number {
-  font-weight: 400;
-}
-
-.white-advantages-description {
-  font-weight: 400;
+.advantages-item-img {
+  width: 800px;
+  height: 384px;
+  background-image: url("/images/main/real-town.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 
 .advantages-item {
@@ -172,14 +166,23 @@ body {
   font-weight: 400;
   color: #333333;
 }
-
-.rgba {
-  background: rgba(131, 179, 211, 0.12);
-}
-.rgba2 {
-  background: rgba(131, 179, 211, 0.2);
-}
  
+.advantages-item-white {
+  color: #FFFFFF;
+}
+
+.advantages-title-white{
+  color: #FFFFFF;
+}
+
+.advantages-description-white {
+  color: #FFFFFF;
+}
+
+.advantages-item-bgcolor-blue {
+  background-color: #82B3D3;
+}
+
 .appointment {
   display: flex;
   width: 1200px;
@@ -187,7 +190,6 @@ body {
   flex-direction: column;
   text-align: center;
 }
-
 
 .appointment-title {
   font-weight: 700;
@@ -447,7 +449,7 @@ body {
   color: #333333;
 }
 
-.footer-social-vk {
+/* .footer-social-vk {
   background-image: url(/images/footer/social-vkontakte.svg); 
   background-repeat: no-repeat;
 }
@@ -470,4 +472,4 @@ body {
 .search {
   background-image: url(/images/header/search.svg);
   background-repeat: no-repeat;
-}
+} */
