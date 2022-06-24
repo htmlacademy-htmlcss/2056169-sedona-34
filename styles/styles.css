@@ -30,6 +30,17 @@ body {
   background-color: #ffffff;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .button {
   font-weight: 700;
   font-size: 16px;
@@ -65,27 +76,38 @@ body {
 
 .navigation-logo {
   width: 140px;
-  margin-right: auto;
+  margin-right: 30px;
 }
 
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap; 
   width: 420px;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .navigation-user {
-  max-width: 300px;
+  width: 290px;
   margin-left: auto;
+  padding-left: 0;
 }
   
 .navigation-link {
+  display: block;
+  padding: 20px 17px;
   color: #000000;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   text-transform: capitalize;
   text-decoration: none;
+}
+
+.navigation-user .navigation-link {
+  min-width: 19px;
+  min-height: 24px;
 }
 
 .main-container {
@@ -113,6 +135,7 @@ body {
 }
 
 .main-title {
+  margin-top: 63px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -121,11 +144,19 @@ body {
 }
 
 .main-description {
+  margin-top: 31px;
+  margin-bottom: 90px;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
 }
+
+.advantages-list-white-block {
+  display: flex;
+  width: 1200px;
+  height: 384px; 
+} 
 
 .advantages-list {
   display: flex;
@@ -133,6 +164,7 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .advantages-item-img {
@@ -145,12 +177,13 @@ body {
 
 .advantages-item {
   width: 400px;
+  height: 384px;
   text-align: center;
   color: #000000;
-  background-color: #ffffff;
 }
 
 .advantages-title {
+  margin-top: 92px;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 24px;
@@ -158,11 +191,13 @@ body {
 }
 
 .advantages-description-number {
+  margin-top: 30px;
   font-weight: 400;
   color: #333333;
 }
 
 .advantages-description {
+  margin-top: 30px;
   font-weight: 400;
   color: #333333;
 }
@@ -183,6 +218,14 @@ body {
   background-color: #82B3D3;
 }
 
+.advantages-title-with-picture {
+  margin-top: 182px;
+}
+
+.advantages-title-without-picture {
+  margin-top: 103px;
+}
+
 .appointment {
   display: flex;
   width: 1200px;
@@ -192,16 +235,26 @@ body {
 }
 
 .appointment-title {
+  margin-top: 91px;
+  text-transform: uppercase;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
 }
 
 .appointment-description {
+  margin-top: 29px;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+}
+
+.catalog-button {
+  display: block;
+  margin-top: 56px;
+  margin-bottom: 138px;
+
 }
 
 .newsletter {
@@ -222,6 +275,8 @@ body {
   justify-content: space-between;
   width: 1060px;
   margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
 
 .footer-social {
@@ -240,6 +295,7 @@ body {
 }
 
 .page-footer-title {
+  margin-top: 49px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -247,9 +303,17 @@ body {
 }
 
 .page-footer-description {
+  margin-top: 29px;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+}
+
+.newsletter-form {
+  display: flex;
+  margin-top: 46px;
+  margin-bottom: 94px;
+  justify-content: center;
 }
 
 .newsletter-button {
@@ -449,7 +513,22 @@ body {
   color: #333333;
 }
 
-/* .footer-social-vk {
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap; 
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-social-item {
+  display: block;
+  width: 47px;
+  height: 40px;
+
+}
+
+.footer-social-vk {
   background-image: url(/images/footer/social-vkontakte.svg); 
   background-repeat: no-repeat;
 }
@@ -472,4 +551,4 @@ body {
 .navigation-item-search {
   background-image: url(/images/header/search.svg);
   background-repeat: no-repeat;
-} */
+}
