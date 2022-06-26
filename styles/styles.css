@@ -232,6 +232,7 @@ body {
   margin: 0 auto;
   flex-direction: column;
   text-align: center;
+  align-items: center;
 }
 
 .appointment-title {
@@ -250,11 +251,14 @@ body {
   color: #333333;
 }
 
-.catalog-button {
+.appointment-button {
   display: block;
   margin-top: 56px;
   margin-bottom: 138px;
-
+  width: 574px;
+  height: 60px;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 .newsletter {
