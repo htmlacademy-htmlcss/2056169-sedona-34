@@ -154,10 +154,6 @@ body {
   text-align: center;
 }
 
-.advantages-list-white-block {
-  display: flex;
-} 
-
 .advantages-list {
   display: flex;
   justify-content: stretch;
@@ -202,10 +198,18 @@ body {
   font-weight: 400;
   color: #333333;
 }
- 
+
+
 .advantages-item-white {
+  display: flex;
+  justify-content: flex-end;
+  width: 1200px;
   color: #FFFFFF;
 }
+
+.advantages-list-white-block {
+  margin: 0 auto;
+}  
 
 .advantages-title-white{
   color: #FFFFFF;
@@ -297,10 +301,11 @@ body {
 .page-footer-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 1060px;
   margin: 0 auto;
-  margin-top: 40px;
-  padding-bottom: 30px;
+  padding-top: 40px;
+  margin-bottom: 30px;
 }
 
 .footer-social {
@@ -341,6 +346,7 @@ body {
   margin-top: 46px;
   padding-bottom: 94px;
   justify-content: center;
+  
 }
 
 .newsletter-button {
