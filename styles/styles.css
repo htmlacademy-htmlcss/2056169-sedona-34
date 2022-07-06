@@ -154,13 +154,30 @@ body {
   text-align: center;
 }
 
-.advantages-list {
+/* .advantages-list {
   display: flex;
   justify-content: stretch;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style-type: none;
+} */
+
+.advantages-list {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word; 
+}
+
+.advantages-item-grid-box-sedona {
+  grid-column: 1 / -1;
+}
+
+.advantages-item-grid-box-bridge {
+  grid-column: 1 / -1;
 }
 
 .advantages-item-img {
@@ -280,11 +297,11 @@ body {
 }
 
 .appointment-button {
-  display: block;
+  
   margin-top: 56px;
   margin-bottom: 93px;
   width: 574px;
-  height: 60px;
+  padding: 12px;
   font-size: 20px;
   line-height: 36px;
 }
@@ -379,13 +396,14 @@ body {
   display: flex;
   margin: 0 auto;
   width: 1060px;
-  /* margin-bottom: 70px; */
 }
 
-.catalog-filter-group {
-  
+.catalog-product {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 1060px;
 }
-
 
 .catalog-search {
   display: flex;
@@ -432,18 +450,27 @@ body {
   align-items: center;
 } */
 
-.product-list {
+/* .product-list {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
   padding-left: 73px;
   margin-bottom: 66px;
+} */
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 66px;
+  padding: 0;
+  column-gap: 18px;
 }
 
-.product-card {
+/* .product-card {
   padding: 20px;
-  margin-right: 18px;
-}
+} */
 
 .pagination-line {
   display: flex;
@@ -452,7 +479,7 @@ body {
   padding: 0;
 }
 
-.product-card-button-flex-box{
+/* .product-card-button-flex-box{
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 16px;
@@ -460,7 +487,6 @@ body {
 
 .overall-size {
   width: 140px;
-  height: 37px;
   display: flex;
   align-items: center;
   margin: 0;
@@ -469,17 +495,11 @@ body {
 
 .overall-size:nth-child(2n) {
   margin-right: 0;
-}
+} */
 
-.product-card-more {
+/* .product-card-more {
   margin-right: 20px;
-}
-
-.img-star {
-  margin-right: 6px;
-}
-
-
+} */
 
 .pagination {
   display: flex;
@@ -488,7 +508,6 @@ body {
   padding: 0;
   list-style-type: none;
   width: 408px;
-  margin-right: x;
 }
 
 .pagination-link {
@@ -560,8 +579,7 @@ body {
   text-transform: capitalize;
   text-decoration: none;
   color: #000000;
-  margin: 0;
-  margin-bottom: 16px;
+  margin: 16px 20px 0;
 }
 
 .product-card-title {
@@ -570,12 +588,51 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+} 
+
+/* .hotel-card-price {
+  color: #333333;
+  font-weight: 400;
+} */
+
+/* .product-card-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  background: #82B3D3;
+} */
+
+/* .rating-number {
+  font-weight: 400;
+  color: #333333;
+  background: #F2F2F2;
+} */
+
+.product-card-grid-box {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  margin: 16px 20px 20px;
+  row-gap: 16px;
+  column-gap: 20px;
+  word-wrap: break-word;
+}
+
+.hotel-card-hotel {
+  margin: 0;
+  font-weight: 400;
+  color: #333333;
+  grid-column: 1 / 2;
 }
 
 .hotel-card-price {
-  color: #333333;
+  margin: 0;
   font-weight: 400;
-  height: 21px;
+  color: #333333;
+  grid-column: 2 / 3;
+}
+
+.product-card-more {
+  grid-column: 1 / 2;
 }
 
 .product-card-button {
@@ -583,12 +640,29 @@ body {
   font-size: 16px;
   line-height: 20px;
   background: #82B3D3;
+  grid-column: 2 / 3;
 }
 
+.img-star {
+  background-image: url("/images/hotel/vector-star.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 17px;
+  margin: 0;
+  padding: 0;
+  margin-right: 6px;
+} 
+
+.rating-star {
+  margin: 0;
+  grid-column: 1 / 2;
+} 
+
 .rating-number {
+  margin: 0;
   font-weight: 400;
   color: #333333;
   background: #F2F2F2;
+  grid-column: 2 / 3;
 }
 
 .pagination-link {
