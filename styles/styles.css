@@ -165,11 +165,11 @@ body {
 
 .advantages-list {
   display: grid;
-  grid-template-rows: min-content min-content min-content;
   grid-template-columns: repeat(3, 400px);
   list-style-type: none;
   margin: 0;
   padding: 0;
+  word-wrap: break-word; 
 }
 
 .advantages-item-grid-box-sedona {
