@@ -43,18 +43,20 @@ body {
 }
 
 .button {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 9px 15px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
   background: #756157;
   border-radius: 4px;
+  border: none;
+  cursor: pointer;
 }
 
 .rgba {
@@ -98,6 +100,7 @@ body {
 }
   
 .navigation-link {
+  position: relative;
   display: block;
   padding: 20px 17px;
   color: #000000;
@@ -106,6 +109,31 @@ body {
   line-height: 26px;
   text-transform: capitalize;
   text-decoration: none;
+}
+
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #dbdbdb;
+}
+
+.navigation-item-basket {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 24px;
+  top: 15px;
+  bottom: 31px;
+  background: #7DB54F;
+  border-radius: 10px;
+  font-size: 10px;
+  line-height: 13px;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 .navigation-user .navigation-link {
@@ -189,6 +217,7 @@ body {
 }
 
 .advantages-item {
+  position: relative;
   width: 400px;
   text-align: center;
   color: #000000;
@@ -248,23 +277,29 @@ body {
   margin-bottom: 81px;
 }
 
-/* .advantages-picture-house {
-  background-image: url("/images/main/vector-house.svg");
-  background-repeat: no-repeat;
-  background-size: auto;
+.advantages-picture-house {
+  position: absolute;
+  width: 75px;
+  height: 72px;
+  left: 162px;
+  top: 80px;
 }
 
 .advantages-picture-food {
-  background-image: url("/images/main/food.svg");
-  background-repeat: no-repeat;
-  background-size: auto;
+  position: absolute;
+  width: 75px;
+  height: 71px;
+  left: 163px;
+  top: 81px;
 }
 
 .advantages-picture-souvenirs {
-  background-image: url("/images/main/souvenirs.svg");
-  background-repeat: no-repeat;
-  background-size: auto;
-} */
+  position: absolute;
+  width: 65px;
+  height: 77px;
+  left: 168px;
+  top: 78px; 
+} 
 
 .advantages-title-without-picture {
   margin-top: 103px;
@@ -297,7 +332,6 @@ body {
 }
 
 .appointment-button {
-  
   margin-top: 56px;
   margin-bottom: 93px;
   width: 574px;
@@ -328,6 +362,27 @@ body {
 .footer-social {
   width: 180px;
   margin-right: auto;
+}
+
+.footer-social-item {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-social-vk {
+  background-image: url("/images/footer/social-vkontakte.svg"); 
+  background-size: 24px 14px;
+}
+
+.footer-social-tg {
+  background-image: url("/images/footer/social-telegram.svg");
+  background-size: 18px 15px;
+}
+
+.footer-social-yt {
+  background-image: url("/images/footer/social-youtube.svg");
+  background-size: 22px 17px;
 }
 
 .footer-contacts-address {
@@ -423,23 +478,44 @@ body {
 }
 
 .select-control {
+  display: flex;
+
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   list-style-type: none;
   width: 290px;
-  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  padding: 14px 20px;
 }
+
+/* .svg-galochka {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+} */
 
 .catalog-button {
   display: flex;
-  margin-top: 0;
-  width: 160px;
+  width: 180px;
   margin-left: auto;
-
 }
 
-.button-light {
+.card-grid-toggle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 48px;
   height: 48px;
   margin-right: 8px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
+
+.card-grid-toggle-current {
+  border: 2px solid #000000;
 }
 
 /* .product-list-hotel {
@@ -643,18 +719,17 @@ body {
   grid-column: 2 / 3;
 }
 
-.img-star {
-  background-image: url("/images/hotel/vector-star.svg");
-  background-repeat: no-repeat;
-  background-size: 18px 17px;
-  margin: 0;
-  padding: 0;
-  margin-right: 6px;
-} 
-
 .rating-star {
+  position: relative;
   margin: 0;
   grid-column: 1 / 2;
+} 
+
+.img-star {
+  position: absolute;
+  margin-right: 6px;
+  width: 18px;
+  height: 17px;
 } 
 
 .rating-number {
@@ -751,11 +826,12 @@ body {
 }
 
 .navigation-item-basket {
-  background-image: url("/images/header/favorite.svg");
-  background-repeat: no-repeat;
+  /* background-image: url("/images/header/favorite.svg");
+  background-repeat: no-repeat; */
+
 }
 
 .navigation-item-search {
-  background-image: url("/images/header/search.svg");
-  background-repeat: no-repeat;
+  /* background-image: url("/images/header/search.svg");
+  background-repeat: no-repeat; */
 }
