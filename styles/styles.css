@@ -46,6 +46,7 @@ body {
   display: inline-block;
   box-sizing: border-box;
   padding: 9px 15px;
+  padding-bottom: 8px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -604,6 +605,13 @@ body {
   margin-left: auto;
 }
 
+.number-offers-found {
+  width: 160px;
+  margin-left: 51px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
+
 .inner-header {
   width: 1060px;
   margin: 0 auto;
@@ -712,11 +720,12 @@ body {
 }
 
 .product-card-button {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
   background: #82B3D3;
   grid-column: 2 / 3;
+}
+
+.product-card-button-current {
+  background: #7DB54F;
 }
 
 .rating-star {
@@ -727,10 +736,26 @@ body {
 
 .img-star {
   position: absolute;
-  margin-right: 6px;
+  top: 10px;
   width: 18px;
   height: 17px;
 } 
+
+.img-star:nth-child(1) {
+  right: 122px;
+}
+
+.img-star:nth-child(2) {
+  right: 98px;
+}
+
+.img-star:nth-child(3) {
+  right: 74px;
+}
+
+.img-star:nth-child(4) {
+  left: 72px;
+}
 
 .rating-number {
   margin: 0;
