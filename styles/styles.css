@@ -31,6 +31,48 @@ body {
   background-color: #ffffff;
 }
 
+.button:hover {
+  background-color: #615048;
+}
+
+.button:focus {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #615048;
+}
+
+.button:disabled {
+  color: #ffffff;
+  background-color: #E5E5E5;
+  cursor: default;
+} 
+
+.product-card-button:hover {
+  background-color: #68A2CA;
+}
+
+.product-card-button:focus {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #82B3D3;
+}
+
+.product-card-button-current:hover {
+  background-color: #6C9E42;
+}
+
+.product-card-button-current:focus {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #7DB54F;
+}
+
+.blue-button:hover {
+  background-color: #68A2CA;
+}
+
+.blue-button:focus {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #82B3D3;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -60,6 +102,10 @@ body {
   cursor: pointer;
 }
 
+.blue-button {
+  background-color: #82B3D3;
+}
+
 .rgba {
   background: rgba(131, 179, 211, 0.12);
 }
@@ -76,6 +122,7 @@ body {
 .navigation {
   display: flex;
   width: 1060px;
+  margin: 0;
   margin: 0 auto;
 }
 
@@ -119,8 +166,16 @@ body {
   bottom: 0;
   left: 0;
   margin: auto;
-  fill: #dbdbdb;
+  fill: #000000;
 }
+
+.navigation-link:hover .navigation-icon {
+  fill: #756157;
+}
+
+.navigation-link:focus .navigation-icon {
+  fill: rgba(117, 97, 87, 0.3);
+} 
 
 .navigation-item-basket {
   position: absolute;
@@ -371,21 +426,6 @@ body {
   background-position: center;
 }
 
-.footer-social-vk {
-  background-image: url("/images/footer/social-vkontakte.svg"); 
-  background-size: 24px 14px;
-}
-
-.footer-social-tg {
-  background-image: url("/images/footer/social-telegram.svg");
-  background-size: 18px 15px;
-}
-
-.footer-social-yt {
-  background-image: url("/images/footer/social-youtube.svg");
-  background-size: 22px 17px;
-}
-
 .footer-contacts-address {
   width: 350px;
   margin: 0 auto;
@@ -422,9 +462,9 @@ body {
   
 }
 
-.newsletter-button {
+/* .newsletter-button {
   background: #82B3D3;
-}
+} */
 
 .footer-contacts-address-phone a {
   color: #000000;
@@ -480,7 +520,6 @@ body {
 
 .select-control {
   display: flex;
-
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -659,10 +698,6 @@ body {
   list-style-type: none;
 }
 
-.button-apply {
-  background: #82B3D3;
-}
-
 .product-card-link{
   display: flex;
   flex-direction: column;
@@ -726,12 +761,12 @@ body {
 }
 
 .product-card-button {
-  background: #82B3D3;
+  background-color: #82B3D3;
   grid-column: 2 / 3;
 }
 
 .product-card-button-current {
-  background: #7DB54F;
+  background-color: #7DB54F;
 }
 
 .rating-star {
@@ -766,6 +801,11 @@ body {
 .rating-number {
   margin: 0;
   font-weight: 400;
+  padding: 9px 22px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
   color: #333333;
   background: #F2F2F2;
   grid-column: 2 / 3;
@@ -828,6 +868,7 @@ body {
 
 .footer-social-list {
   display: flex;
+  position: relative;
   flex-wrap: wrap; 
   margin: 0;
   padding: 0;
@@ -842,27 +883,59 @@ body {
 }
 
 .footer-social-vk {
-  background-image: url("/images/footer/social-vkontakte.svg"); 
+  position: absolute;
   background-repeat: no-repeat;
+  top: 13px;
+  left: 11px;
 }
 
 .footer-social-tg {
-  background-image: url("/images/footer/social-telegram.svg");
+  position: absolute;
   background-repeat: no-repeat;
+  top: 12px;
+  left: 62px;
 }
 
 .footer-social-yt {
-  background-image: url("/images/footer/social-youtube.svg");
+  position: absolute;
   background-repeat: no-repeat;
+  top: 12px;
+  left: 107px;
+} 
+.footer-social-icon {
+  fill: #82B3D3;
 }
 
-.navigation-item-basket {
-  /* background-image: url("/images/header/favorite.svg");
-  background-repeat: no-repeat; */
-
+.footer-social-item:hover .footer-social-icon {
+  fill: #68A2CA;
 }
 
-.navigation-item-search {
-  /* background-image: url("/images/header/search.svg");
-  background-repeat: no-repeat; */
+.footer-social-item:focus .footer-social-icon {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
+.footer-contacts-address:hover .footer-contacts-address-phone {
+  color: #756157;
+}
+
+.footer-contacts-address:focus .footer-contacts-address-phone {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.footer-htmlacademy-link:hover .htmlacademy-link {
+  fill: #756157;
+}
+
+.footer-htmlacademy-link:focus .htmlacademy-link {
+  fill: rgba(117, 97, 87, 0.3);
+}
+
+.navigation-link-current::before {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  left: 20px;
+  height: 2px;
+  background-color: #756257;
+  content: "";
 }
