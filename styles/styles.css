@@ -605,9 +605,15 @@ body {
   margin-left: auto;
 }
 
+.description-number-offers {
+  margin: 0;
+  margin-top: 20px;
+  width: 230px;
+  margin-left: auto;
+}
+
 .number-offers-found {
   width: 160px;
-  margin-left: 51px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
 }
