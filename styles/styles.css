@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/pt-sans-regular.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/pt-sans-bold.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -36,6 +36,10 @@ body {
 }
 
 .button:focus {
+  background-color: #615048;
+} 
+
+.button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #615048;
 }
@@ -51,6 +55,10 @@ body {
 }
 
 .product-card-button:focus {
+  background-color: #82B3D3;
+}
+
+.product-card-button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #82B3D3;
 }
@@ -60,6 +68,10 @@ body {
 }
 
 .product-card-button-current:focus {
+  background-color: #6C9E42;
+}
+
+.product-card-button-current:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #7DB54F;
 }
@@ -69,6 +81,10 @@ body {
 }
 
 .blue-button:focus {
+  background-color: #82B3D3;
+}
+
+.blue-button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #82B3D3;
 }
@@ -131,6 +147,11 @@ body {
   margin-right: 30px;
 }
 
+.page-header-logo {
+  margin-bottom: -10px;
+  position: relative;
+}
+
 .navigation-list {
   display: flex;
   flex-wrap: wrap; 
@@ -159,6 +180,16 @@ body {
   text-decoration: none;
 }
 
+.navigation-link-current::before {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  left: 20px;
+  height: 2px;
+  background-color: #756257;
+  content: "";
+}
+
 .navigation-icon {
   position: absolute;
   top: 0;
@@ -170,12 +201,16 @@ body {
 }
 
 .navigation-link:hover .navigation-icon {
-  fill: #756157;
+  fill: #756257;
 }
 
-.navigation-link:focus .navigation-icon {
+/* .navigation-link:focus .navigation-icon {
   fill: rgba(117, 97, 87, 0.3);
-} 
+} */
+
+.navigation-link:active .navigation-icon {
+  fill: rgba(117, 97, 87, 0.3);
+}
 
 .navigation-item-basket {
   position: absolute;
@@ -212,7 +247,7 @@ body {
 }
 
 .main-background {
-  background-image: url("/images/main/main-mask.svg"), url("/images/main/index-background.jpg");
+  background-image: url("../images/main/main-mask.svg"), url("../images/main/index-background.jpg");
   height: 485px;
   background-position: bottom;
   background-color: #b9b7b6;
@@ -267,7 +302,7 @@ body {
 .advantages-item-img {
   width: 800px;
   height: 384px;
-  background-image: url("/images/main/real-town.jpg");
+  background-image: url("../images/main/real-town.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
@@ -280,7 +315,7 @@ body {
 }
 
 .advantages-title {
-  margin-top: 92px;
+  margin-top: 88px;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 24px;
@@ -327,6 +362,7 @@ body {
 
 .advantages-title-with-picture {
   margin-top: 182px;
+  margin-bottom: 30px;
 }
 
 .advantages-description-with-picture {
@@ -334,27 +370,37 @@ body {
 }
 
 .advantages-picture-house {
+  background-image: url("../images/main/vector-house.svg");
+  background-repeat: no-repeat;
   position: absolute;
   width: 75px;
   height: 72px;
   left: 162px;
   top: 80px;
+  bottom: 232px;
+  margin: 0;
 }
 
 .advantages-picture-food {
+  background-image: url("../images/main/food.svg");
+  background-repeat: no-repeat;
   position: absolute;
   width: 75px;
   height: 71px;
   left: 163px;
   top: 81px;
+  margin: 0;
 }
 
 .advantages-picture-souvenirs {
+  background-image: url("../images/main/souvenirs.svg");
+  background-repeat: no-repeat;
   position: absolute;
   width: 65px;
   height: 77px;
   left: 168px;
   top: 78px; 
+  margin: 0;
 } 
 
 .advantages-title-without-picture {
@@ -397,7 +443,7 @@ body {
 }
 
 .newsletter {
-  background-image: url("/images/footer/background-subscribe.jpg");
+  background-image: url("../images/footer/background-subscribe.jpg");
   background-color: #b9b7b6;
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -429,6 +475,12 @@ body {
 .footer-contacts-address {
   width: 350px;
   margin: 0 auto;
+}
+
+.footer-social-item-link {
+  display: block;
+  height: 40px;
+  width: 47px;
 }
 
 .footer-htmlacademy-link {
@@ -481,7 +533,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   flex-direction: column;
-  background-image: url("/images/filter-content/filter.jpg");
+  background-image: url("../images/filter-content/filter.jpg");
   background-color: #b9b7b6;
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -540,7 +592,7 @@ body {
 .catalog-button {
   display: flex;
   width: 180px;
-  margin-left: auto;
+   margin-left: auto; 
 }
 
 .card-grid-toggle{
@@ -552,10 +604,50 @@ body {
   margin-right: 8px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  padding: 16px 17px;
+}
+
+.card-grid-toggle-icon-table {
+  display: block;
+  background-image: url("../images/filter-content/icon-table.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 14px;
+}
+
+.card-grid-toggle-icon-slideshow {
+  display: block;
+  background-image: url("../images/filter-content/icon-slideshow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 14px;
+}
+
+.card-grid-toggle-icon-list {
+  display: block;
+  background-image: url("../images/filter-content/icon-list.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 14px;
 }
 
 .card-grid-toggle-current {
   border: 2px solid #000000;
+}
+
+.card-grid-toggle:hover {
+  border-color: #68A2CA; 
+}
+
+/*.card-grid-toggle:focus {
+  border-color: #68A2CA; 
+} */
+
+.card-grid-toggle:active {
+  border-color: #000000; 
 }
 
 /* .product-list-hotel {
@@ -671,15 +763,46 @@ body {
   margin-bottom: 10px;
 }
 
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  align-items: center;
+  padding: 0;
+  list-style-type: none;
+}
+
 .breadcrumbs-link {
   text-transform: capitalize;
+  margin-right: 10px;
   text-decoration: none;
   color: #FFFFFF;;
 }
 
 .breadcrumbs-item {
+  display: flex;
+  align-items: center;
   font-weight: 400;
   font-size: 16px;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  display: block;
+  background-image: url("../images/filter-content/breadcrumbs-arrow.svg");
+  background-repeat: no-repeat;
+  width: 6px;
+  height: 9px;
+  margin: 0;
+  content: " ";
+}
+
+.breadcrumbs-link-home {
+  display: block;
+  background-image: url("../images/filter-content/union-home.svg");
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 13px;
+  
 }
 
 .catalog-filter-list {
@@ -763,6 +886,7 @@ body {
 .product-card-button {
   background-color: #82B3D3;
   grid-column: 2 / 3;
+  padding: 9px 8px;
 }
 
 .product-card-button-current {
@@ -772,6 +896,7 @@ body {
 .rating-star {
   position: relative;
   margin: 0;
+  align-self: center;
   grid-column: 1 / 2;
 } 
 
@@ -801,7 +926,7 @@ body {
 .rating-number {
   margin: 0;
   font-weight: 400;
-  padding: 9px 22px;
+  padding: 9px 16px;
   border-radius: 4px;
   text-transform: uppercase;
   text-decoration: none;
@@ -844,16 +969,9 @@ body {
   text-align: center;
 }
 
-.breadcrumbs {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
-  padding: 0;
-  list-style-type: none;
-}
 
 /* .breadcrumbs-arrow {
-  background-image: url("/images/filter-content/vector-catalog-galo4ka.svg");
+  background-image: url("../images/filter-content/vector-catalog-galo4ka.svg");
   background-repeat: no-repeat;
   background-size: 100% auto;
 } */
@@ -911,6 +1029,10 @@ body {
 }
 
 .footer-social-item:focus .footer-social-icon {
+  fill: #68A2CA;
+}
+
+.footer-social-item:active .footer-social-icon {
   fill: rgba(104, 162, 202, 0.3);
 }
 
@@ -919,6 +1041,10 @@ body {
 }
 
 .footer-contacts-address:focus .footer-contacts-address-phone {
+  color: #756157;
+}
+
+.footer-contacts-address:active .footer-contacts-address-phone {
   color: rgba(117, 97, 87, 0.3);
 }
 
@@ -927,15 +1053,28 @@ body {
 }
 
 .footer-htmlacademy-link:focus .htmlacademy-link {
+  fill: #756157;
+}
+
+.footer-htmlacademy-link:active .htmlacademy-link {
   fill: rgba(117, 97, 87, 0.3);
 }
 
-.navigation-link-current::before {
-  position: absolute;
-  right: 20px;
-  bottom: 0;
-  left: 20px;
-  height: 2px;
-  background-color: #756257;
-  content: "";
+.star {
+  display: block;
+  background-image: url("../images/hotel/vector-star.svg");
+  width: 24px;
+  height: 17px;
+}
+
+.star-4 {
+  width: 96px;
+}
+
+.star-3 {
+  width: 72px;
+}
+
+.star-2 {
+  width: 48px;
 }
