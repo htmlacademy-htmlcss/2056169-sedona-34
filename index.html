@@ -139,7 +139,7 @@
         </label>
         <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
           required>
-        <button class="button blue-button" type="submit">Подписаться</button>
+        <button class="button blue-button form-button" type="submit">Подписаться</button>
       </form>
     </section>
 
@@ -218,6 +218,54 @@
     </div>
   </footer>
 
+  <div class="modal-container">
+    <div class="modal modal-auth">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+      <button class="modal-close-button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </div>
+
+    <section class="modal-content">
+    <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+
+      <div class="modal-form-date">
+        <span class="form-label">
+          <label class="modal-form-label" for="modal-date">Дата заезда:</label>
+        </span>
+        <input class="field" type="text" id="modal-date" name="modal-date" placeholder="27 апреля 2020">
+        <p class="modal-form-description">Мы не можем отправить вас в прошлое.</p>
+      </div>
+
+      <p class="modal-form-date">
+        <span class="form-label">
+          <label class="modal-form-label" for="modal-date">Дата выезда:</label>
+        </span>
+        <input class="field" type="text" id="modal-date" name="modal-date" placeholder="1 сентября 2021">
+        <p class="modal-form-description">На эти даты есть свободные номера. Пока есть.</p>
+      </p>
+
+      <label class="modal-form-label"> Взрослые:
+        <p class="button-add"></p>
+        <input class="range-input" type="number" value="2" name="person">
+        <p class="button-less"></p>
+      </label>
+
+      <label class="modal-form-label"> Дети:
+        <span class="tooltip">
+          <button class="tooltip-toggle" type="button">
+            svg
+          </button>
+        </span>
+        <p class="button-add"></p>
+        <input class="range-input" type="number" value="1" name="child">
+        <p class="button-less"></p>
+      </label>
+      <button class="button blue-button blue-button-modal">Найти</button>
+    </form>
+    </dsection>
+
+  </div>
 </body>
 
 </html>
