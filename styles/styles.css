@@ -147,6 +147,11 @@ body {
   margin-right: 30px;
 }
 
+.navigation-button {
+  width: 160px;
+  margin-left: 11px;
+}
+
 .page-header-logo {
   margin-bottom: -10px;
   position: relative;
@@ -155,7 +160,6 @@ body {
 .navigation-list {
   display: flex;
   flex-wrap: wrap; 
-  justify-content: center;
   align-items: center;
   width: 420px;
   margin: 0;
@@ -165,7 +169,7 @@ body {
 
 .navigation-user {
   width: 290px;
-  margin-left: auto;
+  margin-left: 235px;
 }
   
 .navigation-link {
@@ -178,6 +182,10 @@ body {
   line-height: 26px;
   text-transform: capitalize;
   text-decoration: none;
+}
+
+.navigation-icon-link {
+  padding: 20px 12px;
 }
 
 .navigation-link-current::before {
@@ -213,11 +221,14 @@ body {
 }
 
 .navigation-item-basket {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   width: 20px;
   height: 20px;
-  left: 24px;
-  top: 15px;
+  left: 26px;
+  top: 14px;
   bottom: 31px;
   background: #7DB54F;
   border-radius: 10px;
@@ -452,7 +463,7 @@ body {
 }
 
 .field.field-newsletter {
-  width: 600px;
+  width: 556px;
   border-radius: 10px 0px 0px 10px;
   padding: 20px 22px;
 
@@ -557,15 +568,15 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  width: 1060px;
+  /* width: 1060px; */
 }
 
 .catalog-search {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-top: 50px;
-  margin-bottom: 56px;
+  margin-top: 12px;
+  margin-bottom: 46px;
 }
 
 .offers-found {
@@ -574,6 +585,7 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   padding-right: 190px;
+  padding-left: 79px;
   margin: 0;
 }
 
@@ -626,7 +638,7 @@ body {
 .catalog-button {
   display: flex;
   width: 180px;
-   margin-left: auto; 
+  margin-left: 72px; 
 }
 
 .card-grid-toggle{
@@ -638,7 +650,7 @@ body {
   margin-right: 8px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  padding: 16px 17px;
+  padding: 16px 14px;
 }
 
 .card-grid-toggle-icon-table {
@@ -704,7 +716,8 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 340px);
   list-style-type: none;
-  margin: 0;
+  margin: 0 auto;
+  width: 1040px;
   margin-bottom: 66px;
   padding: 0;
   column-gap: 18px;
@@ -799,6 +812,7 @@ body {
 .breadcrumbs {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
   margin-bottom: 40px;
   align-items: center;
   padding: 0;
@@ -1041,7 +1055,7 @@ body {
 }
 
 .catalog-filter-reset-button:focus {
-  border: 3px solid #83B3D3;
+  box-shadow: 0 0 0 3px #83B3D3;
   border-radius: 4px;
 }
 
@@ -1340,7 +1354,28 @@ body {
 }
 
 .form-button {
+  width: 200px;
   border-radius: 0px 10px 10px 0px;
+}
+
+.field-content-wrapper {
+  position: relative;
+}
+
+.modal-field:hover {
+  background: #E6E6E6;
+}
+
+.modal-field:focus {
+  background: #E6E6E6;
+  box-shadow: 0 0 0 3px #81B3D2;
+  outline: none;
+}
+
+.modal-field:active {
+  background: #FFFFFF;
+  box-shadow: 0 0 0 2px #000000;
+  border-radius: 4px;
 }
 
 .field {
@@ -1351,6 +1386,24 @@ body {
   background: #F2F2F2;
   border-radius: 4px;
   border: 0;
+  
+}
+
+.modal-field {
+  width: 380px;
+}
+
+.field-icon {
+  position: absolute;
+  background-image: url("../images/modal/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 18px;
+  height: 15px;
+  top: 18px;
+  right: 19px;
+  opacity: 0.3;
+
 }
 
 .modal-container {
@@ -1561,7 +1614,7 @@ body {
 .tooltip {
   display: block;
   text-align: left;
-  transform: translateX(-50%);
+  transform: translateX(-48%);
   box-sizing: border-box;
   position: absolute;
   visibility: hidden;
@@ -1576,6 +1629,18 @@ body {
   border-radius: 10px;
   top: 44px;
   z-index: 1;
+}
+
+.tooltip::before {
+  position: absolute;
+  bottom: 126px;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  margin-left: -9px;
+  background-color: #333333;
+  content: "";
+  transform: rotate(45deg);
 }
 
 .blue-button-modal {
@@ -1600,5 +1665,5 @@ body {
 }
 
 .modal-container-close {
-  display: none;
+  display: none; 
 }
