@@ -27,7 +27,7 @@
       </ul>
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
-          <a class="navigation-link" href="#">
+          <a class="navigation-link navigation-icon-link" href="#">
             <svg class="navigation-icon" aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 19 19"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -39,7 +39,7 @@
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">
+          <a class="navigation-link navigation-icon-link" href="#">
             <svg class="navigation-icon" aria-hidden="true" focusable="false" width="19" height="17" viewBox="0 0 19 17"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -140,7 +140,7 @@
       <section class="appointment">
         <h2 class="appointment-title">Заинтересовались?</h2>
         <p class="appointment-description">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения
-          гостиниц в Седоне</p>
+          гостиниц в Седоне&nbsp;&nbsp;</p>
         <a class="button appointment-button" href="catalog.html">Поиск Гостиницы в Седоне</a>
       </section>
     </div>
@@ -212,9 +212,7 @@
       </section>
 
       <div class="footer-contacts-address">
-        <p class="footer-contacts-address-phone">
-          <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        </p>
+        <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </div>
 
       <div class="footer-htmlacademy-link">
@@ -256,7 +254,7 @@
   <div class="modal-container modal-container-close">
     <div class="modal modal-auth">
       <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-      <button class="modal-close-button">
+      <button class="modal-close-button" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
 
@@ -265,37 +263,52 @@
 
           <div class="modal-form-date">
             <label class="modal-form-label" for="modal-date">Дата заезда:</label>
-            <input class="field" type="text" id="modal-date" name="modal-date" placeholder="27 апреля 2020">
+            <div class="field-content-wrapper">
+              <input class="field modal-field" type="text" id="modal-date" name="modal-date"
+                placeholder="27 апреля 2020">
+              <div class="field-icon"></div>
+            </div>
             <p class="modal-form-description modal-form-description-error">Мы не можем отправить вас в прошлое.</p>
           </div>
 
           <div class="modal-form-date">
-            <label class="modal-form-label" for="modal-date">Дата выезда:</label>
-            <input class="field" type="text" id="modal-date" name="modal-date" placeholder="1 сентября 2021">
+            <label class="modal-form-label" for="modal-date-second">Дата выезда:</label>
+            <div class="field-content-wrapper">
+              <input class="field modal-field" type="text" id="modal-date-second" name="modal-date-second"
+                placeholder="1 сентября 2021">
+              <div class="field-icon"></div>
+            </div>
             <p class="modal-form-description">На эти даты есть свободные номера. Пока есть.</p>
           </div>
 
           <div class="modal-form-people-wrapper">
             <label class="modal-form-people-label"> <span class="person-label-text">Взрослые:</span>
               <div class="people-counter-wrapper">
-              <button class="button-counter button-dec" type="button"><span class="visually-hidden">Уменьшить количество.</span></button>
-              <input class="field people-counter-input" type="number" placeholder="2" name="person">
-              <button class="button-counter button-inc" type="button"><span class="visually-hidden">Увеличить количество.</span></button>
+                <button class="button-counter button-dec" type="button"><span class="visually-hidden">Уменьшить
+                    количество.</span></button>
+                <input class="field people-counter-input" type="number" placeholder="2" name="person">
+                <button class="button-counter button-inc" type="button"><span class="visually-hidden">Увеличить
+                    количество.</span></button>
               </div>
             </label>
 
-            <label class="modal-form-people-label"> <div class="child-label-text">Дети:
-              <button class="tooltip-toggle" type="button">
-                <span class="tooltip">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-              </button></div>
+            <label class="modal-form-people-label">
+              <div class="child-label-text">Дети:
+                <button class="tooltip-toggle" type="button">
+                  <span class="tooltip">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.
+                    Дети до 6 лет размещаются бесплатно.</span>
+                </button>
+              </div>
               <div class="people-counter-wrapper">
-              <button class="button-counter button-dec" type="button"><span class="visually-hidden">Уменьшить количество.</span></button>
-              <input class="field people-counter-input" type="number" placeholder="1" name="child">
-              <button class="button-counter button-inc" type="button"><span class="visually-hidden">Увеличить количество.</span></button>
+                <button class="button-counter button-dec" type="button"><span class="visually-hidden">Уменьшить
+                    количество.</span></button>
+                <input class="field people-counter-input" type="number" placeholder="1" name="child">
+                <button class="button-counter button-inc" type="button"><span class="visually-hidden">Увеличить
+                    количество.</span></button>
               </div>
             </label>
           </div>
-          <button class="button blue-button blue-button-modal">Найти</button>
+          <button class="button blue-button blue-button-modal" type="button">Найти</button>
         </form>
       </section>
     </div>
